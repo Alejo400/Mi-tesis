@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sistema de Flotabilidad</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<script src="p5/p5.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/npm.js"></script>
+
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="estilos2.css">
+
+<body>
+
+<script type="text/javascript">
+
+var img;
+
+function preload(){
+
+  img = loadImage("ceramica.jpg");
+
+}
+
+  function setup(){
+
+    createCanvas(1350,630,WEBGL);
+
+  }
+
+
+  function draw(){
+
+    background("#BEFFF7");
+
+push();
+fill("#754518");
+//translate(-100,-200,-100);
+translate(0,400,-100);
+rotateX(frameCount * 0);
+rotateY(frameCount * 0);
+rotateZ(frameCount * 0);
+box(1100,300,300);
+
+pop();
+
+push();
+texture(img);
+translate(0,240,-100);
+rotateX(frameCount * 0);
+rotateY(frameCount * 0);
+rotateZ(frameCount * 0);
+box(1100,30,300);
+
+pop();
+
+push();
+fill(41,41,41,190);
+translate(0,110,0);
+rotateX(frameCount * 0);
+rotateY(frameCount * 0);
+rotateZ(frameCount * 0);
+box(500,140,300);
+
+pop();
+
+push();
+fill("#029C0F");
+translate(0,210,0);
+rotateX(frameCount * 0);
+rotateY(frameCount * 0);
+rotateZ(frameCount * 0);
+box(50,50,50);
+
+pop();
+
+push();
+fill("#FE0000");
+translate(0,40,0);
+rotateX(frameCount * 0);
+rotateY(frameCount * 0);
+rotateZ(frameCount * 0);
+cylinder(20,80);
+
+pop();
+
+push();
+stroke("#060606");
+fill(51, 155, 223, 40);
+translate(0,110,0);
+rotateX(frameCount * 0);
+rotateY(frameCount * 0);
+rotateZ(frameCount * 0);
+box(490,130,300);
+
+pop();
+
+  }
+
+</script>
+
+</body>
+</html>
